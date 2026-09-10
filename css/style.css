@@ -1,0 +1,272 @@
+.mspan{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.marquee{
+    background-color: #020b1a;
+    color: #d4af37;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.bi{
+    color: goldenrod;
+}
+/* #050e29 */
+.navbar {
+    background-color: #03122c !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navbar-nav{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.navbar-brand{
+    display: inline-flex;
+    flex-direction: column;
+}
+.custom-nav-container {
+    width:100% !important;
+    max-width: 100% !important;
+    padding-left: 32px !important;  /* Equivalent to px-3 */
+    padding-right: 32px !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #03122c;
+    color: #ffffff;
+    overflow-x: hidden;
+        }
+
+.brand{
+    display:flex; 
+    align-items:center;
+    gap:2;
+    padding-left: 8px;
+}
+.brand-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-family: 'Jost', sans-serif;
+    color: #d4a359;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-left: 8px;
+}
+
+.nav-link-custom {
+    color: #a0aec0 !important;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 12px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid #0f4caa;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-action-link {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.header-action-link:hover {
+    color: #ffffff;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 8px; 
+}
+
+.custom_column{
+    border-right: 1px solid #a0aec0;
+    
+}
+.custom_section{
+    padding-top: 2px;
+    border-top: 1px solid #a0aec0;
+    border-bottom: 1px solid #a0aec0;
+    background-color: #c7a671;
+}
+
+.cust_col>h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: #03122c;
+}
+
+.cust_col>h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sec{
+    background-color: #03122c;
+}
+
+.hero-subtitle{
+    font-family: 'Jost', sans-serif;
+    color: #0f4caa;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.h4-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: white;
+    line-height: 1;
+}
+
+.bestsellers_section{
+    background-color: #03122c;
+    border-bottom: 2px solid #a0aec0;
+}
+
+.card-body{
+    background-color: #c7a671;
+}
+.card-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: white;
+    line-height: 1;
+}
+
+.card-body>h5{
+    color:#03122c;
+}
+
+.card-body>p{
+    color:#0f4caa;
+}
+
+.card-text{
+    color: #020b1a !important;
+}
+
+.perfume-card {
+    background-color: #051838;
+    border-radius: 4px;
+    padding: 8px;
+    height: 100%;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfume-card:hover {
+    transform: translateY(-6px);
+    border: 2px solid #d4af37; /* Gold Highlight */
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.12);
+}
+
+.footer-section{
+    background-color:#03122c;
+}
+
+.footer-brand-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: white;
+}
+
+.footerp{
+    color: #d4a359;
+    font-family: 'Jost', sans-serif;
+    color: #d4a359;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 17px;
+}
+
+.footer-list{
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 2.2;
+}
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .custom-nav-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .header-right {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.contact-subtitle{
+    font-family: 'Jost', sans-serif;
+    color: #0f4caa;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.body-footer{
+    background-color: #c7a671;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;  /* Centers the nav items on desktop (mx-lg-auto) */
+        margin-right: auto;
+        margin-bottom: 0;   /* Resets bottom margin on desktop (mb-lg-0) */
+        gap: 24px;          /* Sets spacing between nav links (gap-lg-4) */
+    }
+    .custom-nav-container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+}
