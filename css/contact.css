@@ -1,0 +1,22 @@
+.contact-subtitle {
+    font-family: 'Jost', sans-serif;
+    color: #0f4caa;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.contact-section {
+    background-color: #c7a671;
+}
+
+.contact_h4 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 0.98;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -.045em;
+    color: white;
+}
