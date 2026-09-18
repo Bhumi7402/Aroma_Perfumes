@@ -23,7 +23,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-.bi {
+.icon {
     color: goldenrod;
 }
 
@@ -238,6 +238,9 @@ body {
     color: white;
 }
 
+.italic-text{
+    font-style: italic;
+}
 
 .customised_section p {
     color: #a0aec0;

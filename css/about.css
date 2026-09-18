@@ -1,0 +1,88 @@
+.about-section{
+    background-color: #c7a671;
+    border-bottom: 1px solid wheat;
+}
+
+.abt-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.about-subtitle{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-top: 8px;
+}
+
+.about_h4{
+    font-weight: 520;
+    font-size: 120px;
+    line-height: 0.88;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -.045em;
+    color: #051838;
+}
+
+.about-section p{
+        color: #1E2229;
+        max-width: 450px;
+        margin: 0;
+        line-height: 1.65;
+        padding-top: 4px;
+        
+}
+
+.approach-section{
+    background-color: #c7a671;
+}
+
+.approach-subtitle{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-top: 16px;
+    
+}
+
+.approach-title{
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 0.98;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -.045em;
+    color: #051838;
+}
+
+.apprch-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.apprch-para{
+    padding-top: 30px;
+}
+
+.para2{
+    font-size: 14px;
+}
+
+.para1{
+    font-size: 17px;
+}
+/* mobile responsiveness */
+@media (width <= 991px) {
+  .your-heading-class {
+    font-size: 62px;
+    line-height: 54.56px;
+    letter-spacing: -3.72px;
+  }
+}

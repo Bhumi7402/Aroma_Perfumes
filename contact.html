@@ -70,36 +70,140 @@
         <section class="contact-section">
             <div class="container p-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <span class="contact-subtitle">Custmer Care</span>
-                        <h4 class="contact_h4">We are here<br>to help.</h4>
+                        <h2 class="contact_h2">We are here<br><span class="italic-text"> to help.</span></h2>
+                        <p>Our customer care team can help with product information, order updates, returns, and custom
+                            perfume questions.</p>
+                        <span class="c_details mb-2"><i class="bi symbols bi-clock-fill"></i> Mon–Fri ·
+                            9:00–17:00</span>
+                        <span class="c_details mb-2"><i class="bi symbols bi-envelope-at-fill"></i>
+                            hello@aromaperfumes.com</span>
+                        <span class="c_details mb-2"><i class="bi symbols bi-geo-alt-fill"></i> Pimpri-Chinchwad,
+                            Pune</span>
                     </div>
                     <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInput1" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="John">
+                        <form class="contact-form" onsubmit="return validate()">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-2">
+                                            <label for="f_name" class="form-label">FIRST NAME</label>
+                                            <input type="text" class="form-control" id="f_name"
+                                                placeholder="Your first name">
+                                            <span class="text-danger" id="f_nameerror"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-2">
+                                            <label for="l_name" class="form-label">LAST NAME</label>
+                                            <input type="text" class="form-control" id="l_name"
+                                                placeholder="Your last name">
+                                            <span class="text-danger" id="l_nameerror"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    placeholder="john@gmail.com">
+                            <div class=" p-2">
+                                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <span class="text-danger" id="emailerror"></span>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div class=" p-2">
+                                <label for="subject" class="form-label">SUBJECT</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Product Question">
+                                <span class="text-danger" id="subjecterror"></span>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <div class="mb-3 p-2">
+                                <label class="mb-2" for="message" class="form-label mb-1">Message</label>
+                                <br>
+                                <textarea id="message" name="message" class="form-control" rows="3"
+                                    placeholder="How we can help?"></textarea>
+                                <span class="text-danger" id="msgerror"></span>
                             </div>
-                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                            <button type="submit" class="btn btn-primary w-100">
+                                SEND MESSAGE
+                            </button>
                         </form>
-                    </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+            function validate() {
+                //Get form values
+                const f_name = document.getElementById("f_name").value.trim();
+                const l_name = document.getElementById("l_name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const subject = document.getElementById("subject").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                //Error Spans
+                const f_nameerror = document.getElementById("f_nameerror");
+                const l_nameerror = document.getElementById("l_nameerror");
+                const emailerror = document.getElementById("emailerror");
+                const subjecterror = document.getElementById("subjecterror");
+                const msgerror = document.getElementById("msgerror");
+
+                //Clean previous messages
+                f_nameerror.textContent = "";
+                l_nameerror.textContent = "";
+                emailerror.textContent = "";
+                subjecterror.textContent = "";
+                msgerror.textContent = "";
+
+                let isvalid = true;
+
+                //Validate fields
+                //f_name
+                if (f_name === "") {
+                    f_nameerror.textContent = "Please enter your first name.";
+                    isvalid = false;
+                }
+                else if (f_name.length < 3) {
+                    f_nameerror.textContent = "Please enter at least 3 characters."
+                    isvalid = false;
+                }
+
+                //l_name
+                if (l_name === "") {
+                    l_nameerror.textContent = "Please enter your last name.";
+                    isvalid = false;
+                }
+                else if (l_name.length < 3) {
+                    l_nameerror.textContent = "Please enter at least 3 characters."
+                    isvalid = false;
+                }
+
+                //email
+                if (email === "") {
+                    emailerror.textContent = "Please enter your email.";
+                    isvalid = false;
+                }
+                else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+                    emailerror.textContent = "Please enter a valid email.";
+                    isvalid = false;
+                }
+
+                //subject
+                if (subject === "") {
+                    subjecterror.textContent = "Please enter your subject.";
+                    isvalid = false;
+                }
+
+                //message
+                if (message === "") {
+                    msgerror.textContent = "Please enter the message.";
+                    isvalid = false;
+                }
+
+                if (isvalid) {
+                    alert("Message Sent Successfully");
+                }
+
+                return isvalid;
+            }
+        </script>
     </main>
     <footer>
         <section class="footer-section p-4">
@@ -114,26 +218,42 @@
                         <span class="brand-subtitle">where every scent tells a story</span>
                     </div>
                     <div class="col-md-3 ">
-                        <p class= "footerp">   SHOP</p>
+                        <p class="footerp"> SHOP</p>
                         <ul class="footer-list list-unstyled p-3">
-                            <a href="shop.html" class="anchor" target="_blank"><li>All Perfumes</li></a>
-                            <a href="customized.html" class="anchor" target="_blank"><li>Custom Perfumes</li></a>
-                            <a><li>Floral Perfumes</li></a>
+                            <a href="shop.html" class="anchor" target="_blank">
+                                <li>All Perfumes</li>
+                            </a>
+                            <a href="customized.html" class="anchor" target="_blank">
+                                <li>Custom Perfumes</li>
+                            </a>
+                            <a>
+                                <li>Floral Perfumes</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <p class= "footerp">   ABOUT</p>
+                        <p class="footerp"> ABOUT</p>
                         <ul class="footer-list list-unstyled p-3">
-                            <a href="about.html" class="anchor" target="_blank"><li>About Aroma</li></a>
-                            <a href="contact.html" class="anchor" target="_blank"><li>Contact Us</li></a>
-                            <a><li>Shipping & Returns</li></a>
+                            <a href="about.html" class="anchor" target="_blank">
+                                <li>About Aroma</li>
+                            </a>
+                            <a href="contact.html" class="anchor" target="_blank">
+                                <li>Contact Us</li>
+                            </a>
+                            <a>
+                                <li>Shipping & Returns</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <p class= "footerp">   FOLLOW AROMA</p>
+                        <p class="footerp"> FOLLOW AROMA</p>
                         <ul class="footer-list list-unstyled p-3">
-                            <a href="https://www.instagram.com" class="anchor" target="_blank"><li>Instagram</li></a>
-                            <a href="https://www.pinterest.com" class="anchor" target="_blank"><li>Pinterest</li></a>
+                            <a href="https://www.instagram.com" class="anchor" target="_blank">
+                                <li>Instagram</li>
+                            </a>
+                            <a href="https://www.pinterest.com" class="anchor" target="_blank">
+                                <li>Pinterest</li>
+                            </a>
                         </ul>
                     </div>
                 </div>

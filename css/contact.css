@@ -1,22 +1,62 @@
 .contact-subtitle {
     font-family: 'Jost', sans-serif;
-    color: #0f4caa;
+    color: white;
     font-size: 0.55rem;
     font-weight: 500;
     letter-spacing: 4px;
     padding-left: 8px;
     padding-top: 8px;
+    margin-bottom: 3px;
 }
 
 .contact-section {
     background-color: #c7a671;
 }
 
-.contact_h4 {
+.contact_h2 {
     font-weight: 500;
-    font-size: 60px;
-    line-height: 0.98;
+    font-size: 70px;
+    line-height: 0.88;
     font-family: 'Cormorant Garamond', serif;
-    letter-spacing: -.045em;
+    letter-spacing: -.04em;
+    color: #051838;
+    margin-bottom: 15px;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.contact-section p{
+    color: #1E2229;
+    max-width: 450px;
+    margin: 0 0 27px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.contact-section span{
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.symbols{
+    color: #051838;
+    font-size: 15px;
+}
+
+.c_details{
+    font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea{
     color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1E2229;
+    padding: 10px 0;         
+    outline: none;            
+    width: 100%; 
 }
